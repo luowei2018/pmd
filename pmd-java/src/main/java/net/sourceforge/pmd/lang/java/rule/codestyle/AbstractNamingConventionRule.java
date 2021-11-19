@@ -28,6 +28,7 @@ abstract class AbstractNamingConventionRule<T extends JavaNode> extends Abstract
 
     static final String CAMEL_CASE = "[a-z][a-zA-Z0-9]*";
     static final String PASCAL_CASE = "[A-Z][a-zA-Z0-9]*";
+    static final String UNICODE_CASE = "[U][+]*[-]*[a-zA-Z0-9]*";
 
     /** The argument is interpreted as the display name, and is converted to camel case to get the property name. */
     RegexPropertyBuilder defaultProp(String displayName) {
