@@ -1,3 +1,4 @@
+// Unicode Test for CS427 Issue link: https://github.com/pmd/pmd/issues/3423
 package net.sourceforge.pmd.lang;
 
 import org.junit.Test;

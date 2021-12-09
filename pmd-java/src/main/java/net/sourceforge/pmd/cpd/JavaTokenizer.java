@@ -59,7 +59,7 @@ public class JavaTokenizer extends JavaCCTokenizer {
         Token javaToken = (Token) currentToken;
 
         constructorDetector.restoreConstructorToken(tokenEntries, javaToken);
-
+        // CS427 Issue link: https://github.com/pmd/pmd/issues/3423
         if (ignoreLiterals && (javaToken.kind == JavaParserConstants.STRING_LITERAL
                 || javaToken.kind == JavaParserConstants.CHARACTER_LITERAL
                 || javaToken.kind == JavaParserConstants.DECIMAL_LITERAL

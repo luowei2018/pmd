@@ -14,6 +14,7 @@ import net.sourceforge.pmd.lang.apex.rule.AbstractApexRule;
 import net.sourceforge.pmd.properties.PropertyBuilder;
 import net.sourceforge.pmd.properties.PropertyDescriptor;
 
+// CS427 Issue link: https://github.com/pmd/pmd/issues/3423
 abstract class AbstractNamingConventionsRule extends AbstractApexRule {
     protected static final Pattern CAMEL_CASE = Pattern.compile("[a-z][a-zA-Z0-9]*");
     protected static final Pattern CAMEL_CASE_WITH_UNDERSCORES = Pattern.compile("[a-z][a-zA-Z0-9_]*");
