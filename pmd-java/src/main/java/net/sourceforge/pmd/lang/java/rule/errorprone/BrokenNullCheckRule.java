@@ -25,6 +25,7 @@ import net.sourceforge.pmd.lang.java.ast.ASTPrimaryPrefix;
 import net.sourceforge.pmd.lang.java.ast.ASTPrimarySuffix;
 import net.sourceforge.pmd.lang.java.rule.AbstractJavaRule;
 
+// CS427 Issue link: https://github.com/pmd/pmd/issues/3430
 public class BrokenNullCheckRule extends AbstractJavaRule {
 
     @Override
