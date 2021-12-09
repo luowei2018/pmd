@@ -63,7 +63,8 @@ public class JavaTokenizer extends JavaCCTokenizer {
         if (ignoreLiterals && (javaToken.kind == JavaParserConstants.STRING_LITERAL
                 || javaToken.kind == JavaParserConstants.CHARACTER_LITERAL
                 || javaToken.kind == JavaParserConstants.DECIMAL_LITERAL
-                || javaToken.kind == JavaParserConstants.FLOATING_POINT_LITERAL)) {
+                || javaToken.kind == JavaParserConstants.FLOATING_POINT_LITERAL
+                || javaToken.kind == JavaParserConstants.UNICODE_CASE)) {
             image = String.valueOf(javaToken.kind);
         }
         if (ignoreIdentifiers && javaToken.kind == JavaParserConstants.IDENTIFIER) {

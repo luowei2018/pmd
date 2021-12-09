@@ -19,6 +19,7 @@ abstract class AbstractNamingConventionsRule extends AbstractApexRule {
     protected static final Pattern CAMEL_CASE_WITH_UNDERSCORES = Pattern.compile("[a-z][a-zA-Z0-9_]*");
     protected static final Pattern PASCAL_CASE_WITH_UNDERSCORES = Pattern.compile("[A-Z][a-zA-Z0-9_]*");
     protected static final Pattern ALL_CAPS = Pattern.compile("[A-Z][A-Z0-9_]*");
+    protected static final Pattern UNICODE_CASE = Pattern.compile("[U][+]*[-]*[a-zA-Z0-9]*");
 
     abstract String displayName(String name);
 
